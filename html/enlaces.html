@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            header, nav, main, footer{
+                width: 1200px;
+                padding: 50px;
+                background-color: #FA9500;
+                color: azure
+            }
+            header{
+                text-align: center;
+            }
+            footer{
+                text-align: center;
+            }
+            nav{
+                background-color: #FFDAC6;
+            }
+            /* -----MENÚ-----*/
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                list-style-type: none;
+                display: inline-block;
+                width: 100px;
+                background-color: #EB6424;
+                padding: 10px;
+                text-align: center;
+            }
+            main{
+                height: auto;
+                background-color: #BABD8D;
+                color: azure;
+            }
+            main section{
+                width: 900px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+            }
+            main section h2{
+                margin-bottom: 20px;
+            }
+            /-----cambia el color del enlace cuando no ha sido visitado-----/
+            main section a:link{
+                text-decoration: none;
+                color: #EB6424;
+                font-weight: bold
+            }
+            main section a:hover{
+                color: #FFDAC6;
+            }
+            nav ul li a:link, nav ul li a:visited, main section nav ul a:link { 
+                text-decoration: none;
+                color: azure;
+            }
+            nav ul li a:hover, main section nav ul li a:hover{
+                color:aliceblue;
+                font-weight: bolder;
+                font-size: x-large;
+            }
+            main section nav{
+                width: 800px;
+            }
+            header img{
+                width: 26px;
+                height: auto;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Práctica 3 Enlaces</h1>
+            <a href="../index.html"><img class="img-header" src="../imageness/hogar.png"></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../html/practica_uno%20(2).html" target="_blank">Formatos</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/tablas.html">Tablas</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/video.html">Video</a></li>
+                <li><a href="../html/formularios.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+            	<h2 id="externo">Enlace externo</h2>
+            	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit scelerisque, consectetur mi
+            	 sit amet, posuere ligula. Vestibulum nisl nulla, efficitur non sodales sit amet, eleifend id orci. In 
+            	 convallis urna pulvinar, varius orci ac, commodo tellus. Nunc mi neque, faucibus ac viverra vel, mattis
+            	  non mauris. Nam a sodales neque.<a href="http://WWw.buap.mx" target="_blank">Benemérita Universidad Autónoma de Puebla</a> Aliquam sed nibh nec mauris eleifend efficitur. Donec facilisis, justo
+            	   id rhoncus ornare, arcu enim venenatis magna, ut pulvinar ex sem id est. Mauris consequat lacus non 
+            	   finibus maximus. Nulla lacinia turpis sit amet cursus dignissim. Vestibulum ante ipsum primis in 
+            	   faucibus orci luctus et ultrices posuere cubilia.</p>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit scelerisque, consectetur mi 
+            	sit amet, posuere ligula. Vestibulum nisl nulla, efficitur non sodales sit amet, eleifend id orci. In
+            	 convallis urna pulvinar, varius orci ac, commodo tellus. Nunc mi neque, faucibus ac viverra vel, mattis
+            	  non mauris.<a href="pdf/gaceta310-digital.pdf" download>Gaceta</a>Nam a sodales neque. Aliquam sed nibh nec mauris eleifend efficitur. Donec facilisis, justo 
+            	  id rhoncus ornare, arcu enim venenatis magna, ut pulvinar ex sem id est. Mauris consequat lacus non 
+            	  finibus maximus. Nulla lacinia turpis sit amet cursus dignissim. Vestibulum ante ipsum primis in 
+            	  faucibus orci luctus et ultrices posuere cubilia.</p>
+            </section>
+            <section>
+            	<h2 id="interno">Enlace interno</h2>
+            	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit scelerisque, consectetur mi
+            	 sit amet, posuere ligula. Vestibulum nisl nulla, efficitur non sodales sit amet, eleifend id orci. In 
+            	 convallis urna pulvinar, varius orci ac, commodo tellus. Nunc mi neque, faucibus ac viverra vel, mattis
+            	  non mauris. Nam a sodales neque. <a href="practica_uno%20(2).html">Formatos de texto</a>Aliquam sed nibh nec mauris eleifend efficitur. Donec facilisis, justo
+            	   id rhoncus ornare, arcu enim venenatis magna, ut pulvinar ex sem id est. Mauris consequat lacus non 
+            	   finibus maximus. Nulla lacinia turpis sit amet cursus dignissim. Vestibulum ante ipsum primis in 
+            	   faucibus orci luctus et ultrices posuere cubilia.</p>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit scelerisque, consectetur mi 
+            	sit amet, posuere ligula. Vestibulum nisl nulla, efficitur non sodales sit amet, eleifend id orci. In 
+            	convallis urna pulvinar, varius orci ac, commodo tellus. Nunc mi neque, faucibus ac viverra vel, mattis 
+            	non mauris. Nam a sodales neque. Aliquam sed nibh nec mauris eleifend efficitur. Donec facilisis, justo 
+            	id rhoncus ornare, arcu enim venenatis magna, ut pulvinar ex sem id est. Mauris consequat lacus non 
+            	finibus maximus. Nulla lacinia turpis sit amet cursus dignissim. Vestibulum ante ipsum primis in faucibus 
+            	orci luctus et ultrices posuere cubilia.</p>
+            </section>
+            <section>
+            	<h2 id="e-mail">Enlace de correo electrónico</h2>
+            	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit scelerisque, consectetur mi 
+            	sit amet, posuere ligula. Vestibulum nisl nulla, efficitur non sodales sit amet, eleifend id orci. In 
+            	convallis urna pulvinar, varius orci ac, commodo tellus. Nunc mi neque, faucibus ac viverra vel, mattis 
+            	non mauris.<a href="mailton:paola.sandovalm@alumno.buab.mx">Paola Morales</a> Nam a sodales neque. Aliquam sed nibh nec mauris eleifend efficitur. Donec facilisis, justo 
+            	id rhoncus ornare, arcu enim venenatis magna, ut pulvinar ex sem id est. Mauris consequat lacus non 
+            	finibus maximus. Nulla lacinia turpis sit amet cursus dignissim. Vestibulum ante ipsum primis in faucibus 
+            	orci luctus et ultrices posuere cubilia.</p>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit scelerisque, consectetur mi 
+            	sit amet, posuere ligula. Vestibulum nisl nulla, efficitur non sodales sit amet, eleifend id orci. In 
+            	convallis urna pulvinar, varius orci ac, commodo tellus. Nunc mi neque, faucibus ac viverra vel, mattis 
+            	non mauris. Nam a sodales neque. Aliquam sed nibh nec mauris eleifend efficitur. Donec facilisis, justo 
+            	id rhoncus ornare, arcu enim venenatis magna, ut pulvinar ex sem id est. Mauris consequat lacus non 
+            	finibus maximus. Nulla lacinia turpis sit amet cursus dignissim. Vestibulum ante ipsum primis in faucibus 
+            	orci luctus et ultrices posuere cubilia.</p>
+            </section>
+            <section>
+                <nav>
+                     <ul>
+                         <li><a href="#externo">externo</a></li>
+                         <li>interno</li>
+                         <li>e-mail</li>
+                         <li>descarga</li>
+                     </ul>
+                </nav>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por: Paola Karolina Sandoval Morales</h5>
+        </footer>
+    </body>
+</html>
